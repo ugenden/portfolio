@@ -150,6 +150,7 @@
   // hero section
   section {
     .hero-container {
+      flex-direction: column;
       width: 70%;
       gap: 50px;
 
@@ -204,7 +205,7 @@
       }
 
       .about_img {
-        width: 100%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -302,6 +303,7 @@
 @media (max-width: 360px) {
   section {
     .hero-container {
+      flex-direction: column;
       width: 70%;
 
       .image {
