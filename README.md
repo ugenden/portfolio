@@ -5,3 +5,4 @@
 - CSS
 - Bootstrap
 - SASS
+- Java Script

@@ -34,18 +34,65 @@ function eraseText() {
 window.onload = typewriter;
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const textElement = document.querySelector('.typewriter-text');
-//     const text = 'WEB-DEVELOPER';
-//     let index = 0;
-  
-//     function typeWriter() {
-//       if (index < text.length) {
-//         textElement.textContent += text.charAt(index);
-//         index++;
-//         setTimeout(typeWriter, 100); // Adjust typing speed here (100ms)
-//       }
-//     }
-  
-//     typeWriter();
-//   });
+// contact section
+function sendMessage() {
+    // Get values from input fields
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('tel').value;
+    const message = document.getElementById('message').value;
+
+    // Check if any fields are empty
+    if (!name || !email || !phone || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Display the collected information
+    alert(`Message Sent!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+
+    // Reset the form after alert
+    document.getElementById('contactForm').reset();
+}
+
+// Skill percentage counter
+
+const skillCounters = document.querySelectorAll('.count');
+const countSpeed = 200; // The lower the slower
+
+skillCounters.forEach(counter => {
+    const updateCount = () => {
+        const target = 70; // Set target to 70%
+        const count = +counter.innerText;
+        
+        // Lower inc to slow and higher to speed up
+        const inc = target / countSpeed;
+        
+        // Check if target is reached
+        if (count < target) {
+            // Add inc to count and output in counter
+            counter.innerText = Math.ceil(count + inc);
+            // Call function every ms
+            setTimeout(updateCount, 1);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    
+    updateCount();
+});
+
+// Trigger the counter animation when the skills section is in view
+const skillsSection = document.querySelector('.skills');
+const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        skillCounters.forEach(counter => {
+            counter.innerText = '0';
+            updateCount();
+        });
+        observer.unobserve(skillsSection);
+    }
+}, { threshold: 0.5 });
+
+observer.observe(skillsSection);
+

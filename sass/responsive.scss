@@ -1,204 +1,535 @@
-// Responsive Styles
-// @media (max-width: 1337px) {
-//     section {
-//       padding: 60px;
+// Media Queries for Hero Section
+@media (max-width: 1337px) {
+  .hero-container {
+    .content {
+      width: 50%;
+
+      h1 {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+      .btn{
+        height: 20vh;
+      }
+    }
+
+  }
+}
+
+  // footer
+  .footer_section {
+    .container {
+      width: 75%;
+      flex-direction: column;
+      padding: 40px 20px;
+
+      .social-links {
+        width: 100%;
+
+      }
+
+      .footerNav {
+        width: 100%;
+      }
+
+      .footerBottom {
+        width: 100%;
+      }
+
+    }
+  }
+
+
+@media (max-width: 1028px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .image {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      h1 {
+        span {
+          font-size: 48px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // about section
+  .about {
+    padding: 40px;
+
+    .content {
+      display: flex;
+      width: 70%;
+
+      .about_details {
+        width: 100%;
+
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        .btns {
+          button {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .about_img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 65vh;
+        }
+      }
+    }
+  }
+
+    // contact section
+    .contact {
+      padding: 40px 20px;
   
-//       .hero-container {
-//         flex-direction: column;
+      .container {
+        width: 100%;
   
-//         .image {
-//           width: 400px;
-//         }
+        form {
+          .form-group {
+            label {
+              padding-left: 0;
+              text-align: center;
+            }
   
-//         .content {
-//           width: 100%;
-//           text-align: center;
-  
-//           h1 {
-//             font-size: 36px;
-//           }
-  
-//           .typewriter-text {
-//             font-size: 28px;
-//           }
-  
-//           p {
-//             font-size: 16px;
-//           }
-//         }
-//       }
-  
-//       .about .content {
-//         .left {
-//           width: 800%;
-//           height: 50vh;
-//           padding-left: 0;
-//         }
-  
-//         .right {
-//           width: 100%;
-//           text-align: center;
-//         }
-//       }
-  
-//       .skills .content .boxes .box {
-//         width: calc(100% / 2 - 10px);
-//       }
-  
-//       .testimonial-section {
-//         padding: 80px 30px;
-//       }
-  
-//       .project-section {
-//         align-items: center;
-//         .container-fluid{
-//             .content{
-//                 display: flex;
-//             }
-//         }
-//       }
-  
-//       .contact .container {
-//         padding: 60px;
-//       }
-  
-//       .footer_section .container {
-//         padding: 60px 20px;
-//       }
-//     }
-//   }
-  
-//   @media (max-width: 1028px) {
-//     section {
-//       padding: 40px;
-  
-//       .hero-container {
-//         .image {
-//           width: 300px;
-//         }
-  
-//         .content {
-//           width: 100%;
-  
-//           h1 {
-//             font-size: 32px;
-//           }
-  
-//           .typewriter-text {
-//             font-size: 24px;
-//           }
-  
-//           p {
-//             font-size: 14px;
-//           }
-//         }
-//       }
-  
-//       .about .content .left {
-//         width: 100%;
-//         padding-left: 0;
-//         text-align: center;
-//       }
-  
-//       .about .content .right {
-//         width: 100%;
-//         text-align: center;
-//       }
-  
-//       .skills .content .boxes .box {
-//         width: calc(100% / 2 - 15px);
-//       }
-  
-//       .testimonial-section {
-//         padding: 60px 20px;
-//       }
-  
-//       .project-section .content {
-//         gap: 20px;
-//       }
-  
-//       .contact .container {
-//         padding: 40px;
-//       }
-  
-//       .footer_section .container {
-//         padding: 40px 20px;
-//       }
-//     }
-//   }
-  
-//   @media (max-width: 768px) {
-//     section {
-//       padding: 20px;
-  
-//       .hero-container {
-//         .image {
-//           width: 200px;
-//         }
-  
-//         .content {
-//           width: 100%;
-//           text-align: center;
-  
-//           h1 {
-//             font-size: 28px;
-//           }
-  
-//           .typewriter-text {
-//             font-size: 20px;
-//           }
-  
-//           p {
-//             font-size: 12px;
-//           }
-//         }
-//       }
-  
-//       .about .content {
-//         flex-direction: column;
-//         align-items: center;
-  
-//         .left,
-//         .right {
-//           width: 100%;
-//           text-align: center;
-//         }
-//       }
-  
-//       .skills .content .boxes .box {
-//         width: calc(100% - 20px);
-//       }
-  
-//       .testimonial-section {
-//         padding: 40px 10px;
-//       }
-  
-//       .project-section .content {
-//         flex-direction: column;
-//         align-items: center;
-//       }
-  
-//       .contact .container {
-//         padding: 20px;
-//       }
-  
-//       .footer_section .container {
-//         padding: 20px 10px;
-//       }
-//     }
-//   }
-  
-//   @media (min-width: 360px) {
-//    section{
-//     .hero-container{
-//         width: 100%;
-//     .content{
-//         .btn{
-//             button{
-//                 padding: 20px 30px 20px 30px;
-//             }
-//         }
-//     } 
-//     }
-//    }
-//   }
+            input,
+            textarea {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  // Adjust header
+  .header_section {
+    .container-fluid {
+      padding: 0px 20px;
+    }
+  }
+
+  // hero section
+  section {
+    .hero-container {
+      width: 70%;
+      gap: 50px;
+
+      .content {
+        width: 100%;
+
+        h1 {
+          font-size: 38px;
+        }
+
+        .typewriter {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+
+  // about section
+  .about {
+    padding: 40px;
+
+    .content {
+      flex-direction: column;
+      width: 70%;
+      gap: 40px;
+
+      .about_details {
+        width: 100%;
+        align-items: end;
+
+        h1 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .btns {
+          button {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .about_img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 65vh;
+        }
+      }
+    }
+  }
+
+  // skills section
+  .skills {
+    padding: 40px 20px;
+
+    .content {
+      width: 70%;
+
+      .skills-detailed {
+        flex-direction: column;
+
+        .text {
+          width: 100%;
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .boxes {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //  project section
+  .project-section {
+    padding: 40px 20px;
+
+    .content .cards {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  // contact section
+  .contact {
+    padding: 40px 20px;
+
+    .container {
+      width: 100%;
+
+      form {
+        .form-group {
+          label {
+            padding-left: 0;
+            text-align: center;
+          }
+
+          input,
+          textarea {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  // Adjust footer
+  .footer_section {
+    .container {
+      width: 70%;
+      flex-direction: column;
+      padding: 40px 20px;
+
+      .social-links {
+        width: 100%;
+
+      }
+
+      .footerNav {
+        width: 100%;
+      }
+
+      .footerBottom {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    .hero-container {
+      width: 70%;
+
+      .image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .content {
+        h1 {
+          font-size: 20px;
+        }
+
+        .typewriter {
+          font-size: 14px;
+
+          .typewriter-text {
+            font-size: 28px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .social-links {
+          width: 110%;
+        }
+
+        .btn {
+          font-size: 18px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .about {
+    padding: 0px;
+    width: 100%;
+
+    .content {
+      width: 70%;
+
+      .about_details {
+        width: 100%;
+
+        h1 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .about_img {
+        width: 100%;
+
+        img {
+          height: 50vh;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .skills {
+    padding: 40px 0px;
+
+    .content {
+      width: 70%;
+      padding: 0px;
+
+      .skills-detailed {
+        width: 100%;
+
+        .text {
+          width: 100%;
+
+          .topic {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .boxes {
+          width: 100%;
+          padding: 0px;
+
+          .boxe {
+            width: 100%;
+
+            .box {
+              width: 33%;
+              flex-direction: column;
+
+              h2 {
+                font-size: 14px;
+
+              }
+
+              h3 {
+                font-size: 20px;
+
+                .count {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project-section {
+    .container {
+      width: 70%;
+
+      .content {
+        flex-direction: column;
+
+        .cards {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .contact {
+    padding: 40px 0px;
+
+    .title {
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .container {
+      width: 100%;
+
+      .text {
+
+        // width: 100%;
+        p {
+          font-size: 16px;
+        }
+      }
+
+      form {
+        padding: 30px 0px;
+        width: 100%;
+
+        .form-group {
+          label {
+            font-size: 18px;
+            padding-top: 20px;
+          }
+
+          input,
+          textarea {
+            font-size: 14px;
+          }
+        }
+
+        .btns {
+          font-size: 90%;
+        }
+      }
+    }
+  }
+
+  .footer_section {
+    .container {
+      flex-direction: column;
+      width: 70%;
+      padding: 30px 0;
+      gap: 30px;
+
+      .social-links {
+        width: 100%;
+        margin-bottom: 20px;
+
+
+        a {
+          i {
+            width: 15%;
+            height: 7vh;
+            font-size: 1.2rem;
+            margin: 5px;
+          }
+        }
+      }
+
+      .footerNav {
+        width: 127%;
+
+        ul {
+          flex-direction: row;
+          padding: 0px;
+          gap: 10px;
+
+          li a {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .footerBottom {
+        width: 100%;
+
+        p {
+          font-size: 12px;
+        }
+
+        .designer {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

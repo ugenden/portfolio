@@ -1,1 +1,364 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (max-width: 1337px) {
+  .hero-container .content {
+    width: 50%;
+  }
+  .hero-container .content h1 {
+    font-size: 42px;
+  }
+  .hero-container .content p {
+    font-size: 16px;
+  }
+  .hero-container .content .btn {
+    height: 20vh;
+  }
+}
+.footer_section .container {
+  width: 75%;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.footer_section .container .social-links {
+  width: 100%;
+}
+.footer_section .container .footerNav {
+  width: 100%;
+}
+.footer_section .container .footerBottom {
+  width: 100%;
+}
+
+@media (max-width: 1028px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .hero-container .image {
+    width: 50%;
+  }
+  .hero-container .image img {
+    width: 100%;
+  }
+  .hero-container .content h1 span {
+    font-size: 48px;
+  }
+  .hero-container .content p {
+    font-size: 16px;
+  }
+  .about {
+    padding: 40px;
+  }
+  .about .content {
+    display: flex;
+    width: 70%;
+  }
+  .about .content .about_details {
+    width: 100%;
+  }
+  .about .content .about_details h1 {
+    font-size: 28px;
+  }
+  .about .content .about_details p {
+    font-size: 18px;
+  }
+  .about .content .about_details .btns button a {
+    font-size: 20px;
+  }
+  .about .content .about_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .content .about_img img {
+    width: 100%;
+    height: 65vh;
+  }
+  .contact {
+    padding: 40px 20px;
+  }
+  .contact .container {
+    width: 100%;
+  }
+  .contact .container form .form-group label {
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact .container form .form-group input,
+  .contact .container form .form-group textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header_section .container-fluid {
+    padding: 0px 20px;
+  }
+  section .hero-container {
+    width: 70%;
+    gap: 50px;
+  }
+  section .hero-container .content {
+    width: 100%;
+  }
+  section .hero-container .content h1 {
+    font-size: 38px;
+  }
+  section .hero-container .content .typewriter {
+    font-size: 20px;
+  }
+  section .hero-container .content p {
+    font-size: 16px;
+  }
+  .about {
+    padding: 40px;
+  }
+  .about .content {
+    flex-direction: column;
+    width: 70%;
+    gap: 40px;
+  }
+  .about .content .about_details {
+    width: 100%;
+    align-items: end;
+  }
+  .about .content .about_details h1 {
+    font-size: 22px;
+  }
+  .about .content .about_details p {
+    font-size: 16px;
+  }
+  .about .content .about_details .btns button a {
+    font-size: 20px;
+  }
+  .about .content .about_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .content .about_img img {
+    height: 65vh;
+  }
+  .skills {
+    padding: 40px 20px;
+  }
+  .skills .content {
+    width: 70%;
+  }
+  .skills .content .skills-detailed {
+    flex-direction: column;
+  }
+  .skills .content .skills-detailed .text {
+    width: 100%;
+  }
+  .skills .content .skills-detailed .text p {
+    font-size: 16px;
+  }
+  .skills .content .skills-detailed .boxes {
+    width: 100%;
+  }
+  .project-section {
+    padding: 40px 20px;
+  }
+  .project-section .content .cards {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact {
+    padding: 40px 20px;
+  }
+  .contact .container {
+    width: 100%;
+  }
+  .contact .container form .form-group label {
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact .container form .form-group input,
+  .contact .container form .form-group textarea {
+    width: 90%;
+  }
+  .footer_section .container {
+    width: 70%;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .footer_section .container .social-links {
+    width: 100%;
+  }
+  .footer_section .container .footerNav {
+    width: 100%;
+  }
+  .footer_section .container .footerBottom {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  section .hero-container {
+    width: 70%;
+  }
+  section .hero-container .image {
+    width: 100%;
+  }
+  section .hero-container .image img {
+    width: 100%;
+  }
+  section .hero-container .content h1 {
+    font-size: 20px;
+  }
+  section .hero-container .content .typewriter {
+    font-size: 14px;
+  }
+  section .hero-container .content .typewriter .typewriter-text {
+    font-size: 28px;
+  }
+  section .hero-container .content p {
+    font-size: 14px;
+  }
+  section .hero-container .content .social-links {
+    width: 110%;
+  }
+  section .hero-container .content .btn {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    padding: 0px;
+    width: 100%;
+  }
+  .about .content {
+    width: 70%;
+  }
+  .about .content .about_details {
+    width: 100%;
+  }
+  .about .content .about_details h1 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .about .content .about_details p {
+    font-size: 14px;
+  }
+  .about .content .about_img {
+    width: 100%;
+  }
+  .about .content .about_img img {
+    height: 50vh;
+    width: 80%;
+  }
+  .skills {
+    padding: 40px 0px;
+  }
+  .skills .content {
+    width: 70%;
+    padding: 0px;
+  }
+  .skills .content .skills-detailed {
+    width: 100%;
+  }
+  .skills .content .skills-detailed .text {
+    width: 100%;
+  }
+  .skills .content .skills-detailed .text .topic {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .skills .content .skills-detailed .text p {
+    font-size: 14px;
+  }
+  .skills .content .skills-detailed .boxes {
+    width: 100%;
+    padding: 0px;
+  }
+  .skills .content .skills-detailed .boxes .boxe {
+    width: 100%;
+  }
+  .skills .content .skills-detailed .boxes .boxe .box {
+    width: 33%;
+    flex-direction: column;
+  }
+  .skills .content .skills-detailed .boxes .boxe .box h2 {
+    font-size: 14px;
+  }
+  .skills .content .skills-detailed .boxes .boxe .box h3 {
+    font-size: 20px;
+  }
+  .skills .content .skills-detailed .boxes .boxe .box h3 .count {
+    font-size: 20px;
+  }
+  .project-section .container {
+    width: 70%;
+  }
+  .project-section .container .content {
+    flex-direction: column;
+  }
+  .project-section .container .content .cards {
+    width: 100%;
+  }
+  .contact {
+    padding: 40px 0px;
+  }
+  .contact .title span {
+    font-size: 24px;
+  }
+  .contact .container {
+    width: 100%;
+  }
+  .contact .container .text p {
+    font-size: 16px;
+  }
+  .contact .container form {
+    padding: 30px 0px;
+    width: 100%;
+  }
+  .contact .container form .form-group label {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .contact .container form .form-group input,
+  .contact .container form .form-group textarea {
+    font-size: 14px;
+  }
+  .contact .container form .btns {
+    font-size: 90%;
+  }
+  .footer_section .container {
+    flex-direction: column;
+    width: 70%;
+    padding: 30px 0;
+    gap: 30px;
+  }
+  .footer_section .container .social-links {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer_section .container .social-links a i {
+    width: 15%;
+    height: 7vh;
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  .footer_section .container .footerNav {
+    width: 127%;
+  }
+  .footer_section .container .footerNav ul {
+    flex-direction: row;
+    padding: 0px;
+    gap: 10px;
+  }
+  .footer_section .container .footerNav ul li a {
+    font-size: 14px;
+  }
+  .footer_section .container .footerBottom {
+    width: 100%;
+  }
+  .footer_section .container .footerBottom p {
+    font-size: 12px;
+  }
+  .footer_section .container .footerBottom .designer {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
